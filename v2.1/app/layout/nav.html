@@ -1,0 +1,88 @@
+        
+<div id="nav-wrapper">
+    <ul id="nav"
+        data-ng-controller="NavCtrl"
+        data-slim-scroll
+        data-collapse-nav
+        data-highlight-active>
+        <li><a href="#/dashboard"> <i class="fa fa-dashboard"></i><span data-translate="DASHBOARD"></span> </a></li>
+        <li>
+            <a href="#/ui"><i class="fa fa-magic"></i><span data-translate="UI_KIT"></span></a>
+            <ul>
+                <li><a href="#/ui/buttons"><i class="fa fa-caret-right"></i><span data-translate="BUTTONS"></span></a></li>
+                <li><a href="#/ui/typography"><i class="fa fa-caret-right"></i><span data-translate="TYPOGRAPHY"></span></a></li>
+                <li><a href="#/ui/widgets"><i class="fa fa-caret-right"></i><span data-translate="WIDGETS"></span> <span class="badge badge-success">13</span></a></li>
+                <li><a href="#/ui/grids"><i class="fa fa-caret-right"></i><span data-translate="GRIDS"></span></a></li>
+                <li><a href="#/ui/icons"><i class="fa fa-caret-right"></i><span data-translate="ICONS"></span></a></li>
+                <li><a href="#/ui/components"><i class="fa fa-caret-right"></i><span data-translate="COMPONENTS"></span> <span class="badge badge-danger">17</span></a></li>
+                <li><a href="#/ui/timeline"><i class="fa fa-caret-right"></i><span data-translate="TIMELINE"></span></a></li>
+                <li><a href="#/ui/pricing-tables"><i class="fa fa-caret-right"></i><span data-translate="PRICING_TABLES"></span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/pages"><i class="fa fa-file-text-o"></i><span data-translate="PAGES"></span></a>
+            <ul>
+                <li><a href="#/page/signin"><i class="fa fa-caret-right"></i><span data-translate="SIGN_IN"></span></a></li>
+                <li><a href="#/page/signup"><i class="fa fa-caret-right"></i><span data-translate="SIGN_UP"></span></a></li>
+                <li><a href="#/page/forgot-password"><i class="fa fa-caret-right"></i><span data-translate="FORGOT_PASSWORD"></span></a></li>
+                <li><a href="#/page/lock-screen"><i class="fa fa-caret-right"></i><span data-translate="LOCK_SCREEN"></span></a></li>
+                <li><a href="#/page/profile"><i class="fa fa-caret-right"></i><span data-translate="USER_PROFILE"></span></a></li>
+                <li><a href="#/page/404"><i class="fa fa-caret-right"></i>404 <span data-translate="ERROR"></span></a></li>
+                <li><a href="#/page/500"><i class="fa fa-caret-right"></i>500 <span data-translate="ERROR"></span></a></li>
+                <li><a href="#/page/blank"><i class="fa fa-caret-right"></i><span data-translate="BLANK_PAGE"></span></a></li>
+                <li><a href="#/page/services"><i class="fa fa-caret-right"></i><span data-translate="SERVICES"></span></a></li>
+                <li><a href="#/page/about"><i class="fa fa-caret-right"></i><span data-translate="ABOUT"></span></a></li>
+                <li><a href="#/page/contact"><i class="fa fa-caret-right"></i><span data-translate="CONTACT"></span></a></li>
+                <li><a href="#/page/invoice"><i class="fa fa-caret-right"></i><span data-translate="INVOICE"></span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/table"><i class="fa fa-table"></i><span data-translate="TABLES"></span></a>
+            <ul>
+                <li><a href="#/table/static"><i class="fa fa-caret-right"></i><span data-translate="STATIC_TABLES"></span></a></li>
+                <li><a href="#/table/responsive"><i class="fa fa-caret-right"></i><span data-translate="RESPONSIVE_TABLES"></span></a></li>
+                <li><a href="#/table/dynamic"><i class="fa fa-caret-right"></i><span data-translate="DYNAMIC_TABLES"></span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/form"><i class="fa fa-pencil"></i><span data-translate="FORMS"></span></a>
+            <ul>
+                <li><a href="#/form/elements"><i class="fa fa-caret-right"></i><span data-translate="FORM_ELEMENTS"></span> <span class="badge badge-warning">14</span></a></li>
+                <li><a href="#/form/validation"><i class="fa fa-caret-right"></i><span data-translate="FORM_VALIDATION"></span></a></li>
+                <li><a href="#/form/wizard"><i class="fa fa-caret-right"></i><span data-translate="FORM_WIZARD"></span></a></li>
+                <li><a href="#/form/layouts"><i class="fa fa-caret-right"></i><span data-translate="FORM_LAYOUTS"></span></a></li>
+            </ul>
+        </li>
+       <li>
+            <a href="#/charts"><i class="fa fa-bar-chart-o"></i><span data-translate="CHARTS"></span></a>
+            <ul>
+                <li><a href="#/chart/morris"><i class="fa fa-caret-right"></i>Morris <span data-translate="CHARTS"></span></a></li>
+                <li><a href="#/chart/flot"><i class="fa fa-caret-right"></i>Flot <span data-translate="CHARTS"></span></a></li>
+                <li><a href="#/chart/charts"><i class="fa fa-caret-right"></i>Other <span data-translate="CHARTS"></span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/maps"><i class="fa fa-map-marker"></i><span data-translate="MAPS"></span></a>
+            <ul>
+                <li><a href="#/map/gmap"><i class="fa fa-caret-right"></i><span data-translate="GOOGLE_MAP"></span></a></li>
+                <li><a href="#/map/jqvmap"><i class="fa fa-caret-right"></i><span data-translate="VECTOR_MAP"></span></a></li>
+            </ul>
+        </li>
+
+        <li class="nav-task">
+            <a href="#/task/task">
+                <i class="fa fa-tasks"></i><span data-translate="TASKS"></span>
+                <span class="badge badge-info main-badge"
+                      data-ng-show="taskRemainingCount > 0">{{taskRemainingCount}}</span>
+            </a>
+        </li>
+        <li>
+            <a href="#/mail"><i class="fa fa-envelope-o"></i><span data-translate="MAIL"></span></a>
+            <ul>
+                <li><a href="#/mail/inbox"><i class="fa fa-caret-right"></i><span data-translate="INBOX"></span></a></li>
+                <li><a href="#/mail/compose"><i class="fa fa-caret-right"></i><span data-translate="COMPOSE"></span></a></li>
+                <li><a href="#/mail/single"><i class="fa fa-caret-right"></i><span data-translate="SINGLE_MAIL"></span></a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
